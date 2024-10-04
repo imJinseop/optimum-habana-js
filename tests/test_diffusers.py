@@ -816,6 +816,7 @@ class GaudiStableDiffusionPipelineTester(TestCase):
         self.assertEqual(upscaled_image.shape, (512, 512, 3))
         self.assertLess(np.abs(expected_slice - upscaled_image[-3:, -3:, -1].flatten()).max(), 5e-3)
 
+class GaudiStableDiffusionPipelineTester_8x(TestCase):
     @slow
     @pytest.mark.skipif(hthpu.is_available() and hthpu.device_count() != 8, reason="system does not have 8 cards")
     def test_textual_inversion(self):
