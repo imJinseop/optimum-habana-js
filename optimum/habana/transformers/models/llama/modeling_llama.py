@@ -348,9 +348,13 @@ def gaudi_llama_repeat_kv(
 
 #  FusedScaledDotProductAttention
 class ModuleFusedSDPA(torch.nn.Module):
-    def __init__(self, fusedSDPA):
+    def __init__(self, fusedSDPA, scale, attention_dropout, enable_recompute, flash_attention_fp8):
         super().__init__()
         self._hpu_kernel_fsdpa = fusedSDPA
+        self.scale = scale
+        self.attention_dropout = attention_dropout
+        self.enable_recompute = enable_recompute
+        self.flash_attention_fp8 = flash_attention_fp8
 
     def forward(
         self,
@@ -438,7 +442,6 @@ class GaudiLlamaAttention(LlamaAttention):
         self.matmul_av = Matmul()
         self.k_cache = KVCache()
         self.v_cache = KVCache()
-        self.fused_scaled_dot_product_attention = ModuleFusedSDPA(FusedSDPA) if FusedSDPA else None
         if hasattr(config, "fused_qkv") and config.fused_qkv:
             self.num_heads = config.num_attention_heads
             self.head_dim = config.hidden_size // self.num_heads
@@ -454,6 +457,17 @@ class GaudiLlamaAttention(LlamaAttention):
             self.v_proj = None
         self.inp_seq_len = -1
         self.norm_factor = 1.0 / math.sqrt(self.head_dim)
+        self.fused_scaled_dot_product_attention = (
+            ModuleFusedSDPA(
+                FusedSDPA,
+                scale=self.norm_factor,
+                attention_dropout=self.attention_dropout,
+                enable_recompute=False,
+                flash_attention_fp8=getattr(config, "flash_attention_fp8", False),
+            )
+            if FusedSDPA
+            else None
+        )
 
     def get_k_proj_weight(self):
         """4bit quantization in GPTQ replaces the k_proj.weight with qweight."""
