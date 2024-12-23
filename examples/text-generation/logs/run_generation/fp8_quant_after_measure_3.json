@@ -1,0 +1,62 @@
+/usr/lib/python3.10/inspect.py:288: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  return isinstance(object, types.FunctionType)
+/usr/local/lib/python3.10/dist-packages/transformers/deepspeed.py:24: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+12/23/2024 07:07:28 - INFO - __main__ - Single-device run.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  6.55it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  7.11it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  7.33it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.60it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.40it/s]
+2024-12-23 07:07:30 [WARNING][auto_accelerator.py:422] Auto detect accelerator: HPU_Accelerator.
+2024-12-23 07:07:30 [INFO][utils.py:211] Conversion started.
+2024-12-23 07:07:30 [INFO][quantize.py:224] Start to convert model with fp8_quant.
+============================= HABANA PT BRIDGE CONFIGURATION =========================== 
+ PT_HPU_LAZY_MODE = 1
+ PT_RECIPE_CACHE_PATH = 
+ PT_CACHE_FOLDER_DELETE = 0
+ PT_HPU_RECIPE_CACHE_CONFIG = 
+ PT_HPU_MAX_COMPOUND_OP_SIZE = 9223372036854775807
+ PT_HPU_LAZY_ACC_PAR_MODE = 1
+ PT_HPU_ENABLE_REFINE_DYNAMIC_SHAPES = 0
+ PT_HPU_EAGER_PIPELINE_ENABLE = 1
+ PT_HPU_EAGER_COLLECTIVE_PIPELINE_ENABLE = 1
+---------------------------: System Configuration :---------------------------
+Num CPU Cores : 160
+CPU RAM       : 2113399844 KB
+------------------------------------------------------------------------------
+2024-12-23 07:07:37 [INFO][utils.py:211] Conversion end.
+12/23/2024 07:07:39 - INFO - __main__ - Args: Namespace(device='hpu', model_name_or_path='/model_weights/meta-llama/Llama-3.1-8B-Instruct/', bf16=True, max_new_tokens=100, max_input_tokens=0, batch_size=1, warmup=3, n_iterations=5, local_rank=0, use_kv_cache=True, use_hpu_graphs=True, dataset_name=None, column_name=None, do_sample=False, num_beams=1, top_k=None, penalty_alpha=None, trim_logits=False, seed=27, profiling_warmup_steps=0, profiling_steps=0, profiling_record_shapes=False, prompt=None, bad_words=None, force_words=None, assistant_model=None, peft_model=None, num_return_sequences=1, token=None, model_revision='main', attn_softmax_bf16=False, output_dir=None, bucket_size=-1, bucket_internal=False, dataset_max_samples=-1, limit_hpu_graphs=False, show_graphs_count=False, reuse_cache=False, verbose_workers=False, simulate_dyn_prompt=None, reduce_recompile=False, use_chat_template=False, use_flash_attention=True, flash_attention_recompute=False, flash_attention_causal_mask=False, flash_attention_fast_softmax=True, book_source=False, torch_compile=False, ignore_eos=True, temperature=1.0, top_p=1.0, const_serialization_path=None, trust_remote_code=False, parallel_strategy='none', input_embeds=False, run_partial_dataset=False, load_quantized_model_with_autogptq=False, disk_offload=False, load_quantized_model_with_inc=False, local_quantized_inc_model_path=None, quant_config='./quantization_config/maxabs_quant.json', world_size=0, global_rank=0)
+12/23/2024 07:07:39 - INFO - __main__ - device: hpu, n_hpu: 0, bf16: True
+12/23/2024 07:07:39 - INFO - __main__ - Model initialization took 12.168s
+12/23/2024 07:07:39 - INFO - __main__ - Graph compilation...
+Initializing inference mode
+Warming up iteration 1/3
+/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+12/23/2024 07:07:46 - INFO - __main__ - Time to first token = 3642.490898258984ms
+Warming up iteration 2/3
+12/23/2024 07:07:47 - INFO - __main__ - Time to first token = 12.834396213293076ms
+Warming up iteration 3/3
+12/23/2024 07:07:47 - INFO - __main__ - Time to first token = 8.246404118835926ms
+12/23/2024 07:07:47 - INFO - __main__ - Running generate...
+12/23/2024 07:07:48 - INFO - __main__ - Time to first token = 8.202713914215565ms
+12/23/2024 07:07:48 - INFO - __main__ - Time to first token = 8.132874965667725ms
+12/23/2024 07:07:49 - INFO - __main__ - Time to first token = 8.11604131013155ms
+12/23/2024 07:07:49 - INFO - __main__ - Time to first token = 8.104056119918823ms
+12/23/2024 07:07:50 - INFO - __main__ - Time to first token = 8.078720420598984ms
+
+Input/outputs:
+input 1: ('DeepSpeed is a machine learning framework',)
+output 1.1: ('DeepSpeed is a machine learning framework that provides a set of tools and libraries to optimize and accelerate the training of large-scale deep learning models. It is designed to be highly scalable and flexible, allowing users to easily integrate it with popular deep learning frameworks such as PyTorch and TensorFlow.\n\nDeepSpeed provides a range of features and tools to optimize the training process, including:\n\n1.  **Mixed Precision Training**: DeepSpeed supports mixed precision training, which allows models to be trained using a combination of 32-bit and 16-bit floating',)
+
+
+Stats:
+-----------------------------------------------------------------------------------
+Input tokens
+Throughput (including tokenization) = 215.75723943780267 tokens/second
+Memory allocated                    = 8.16 GB
+Max memory allocated                = 9.13 GB
+Total memory available              = 94.62 GB
+Graph compilation duration          = 8.254542903974652 seconds
+-----------------------------------------------------------------------------------
+

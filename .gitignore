@@ -133,3 +133,7 @@ dmypy.json
 
 # ruff
 .ruff_cache
+
+
+# js
+**/hl-smi_log.txt
