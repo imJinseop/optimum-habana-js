@@ -1,0 +1,13 @@
+{
+    "throughput": 52.61318617873549,
+    "input": [
+        [
+            "DeepSpeed is a machine learning framework"
+        ]
+    ],
+    "output": [
+        [
+            "DeepSpeed is a machine learning framework that provides a set of tools and libraries for scaling up deep learning models and training them on large datasets. It is designed to be highly efficient and scalable, allowing users to train large models on a single machine or distribute the training across multiple machines.\n\nHere are some key features of DeepSpeed:\n\n1.  **Efficient Training**: DeepSpeed provides a set of techniques to optimize the training process, including gradient accumulation, mixed precision training, and model parallelism. These techniques can significantly reduce the training time"
+        ]
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "throughput": 130.96905924670327,
+    "input": [
+        [
+            "DeepSpeed is a machine learning framework"
+        ]
+    ],
+    "output": [
+        [
+            "DeepSpeed is a machine learning framework that provides a set of tools and libraries for optimizing and scaling deep learning models. It is designed to work with popular deep learning frameworks such as PyTorch and TensorFlow, and provides a range of features for improving the performance and efficiency of deep learning models.\n\nSome of the key features of DeepSpeed include:\n\n1. **Mixed Precision Training**: DeepSpeed allows for mixed precision training, which involves using a combination of 16-bit and 32-bit floating point numbers to reduce memory usage and improve performance.\n"
+        ]
+    ]
+}
