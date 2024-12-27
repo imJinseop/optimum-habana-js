@@ -137,3 +137,4 @@ dmypy.json
 
 # js
 **/hl-smi_log.txt
+**/examples/text-generation/profiles/**
