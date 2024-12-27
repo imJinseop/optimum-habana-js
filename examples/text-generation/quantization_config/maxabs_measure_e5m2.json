@@ -1,0 +1,7 @@
+{
+    "method": "HOOKS",
+    "mode": "MEASURE",
+    "observer": "maxabs",
+    "dump_stats_path": "./hqt_output/measure",
+    "fp8_config": "E5M2"
+}
