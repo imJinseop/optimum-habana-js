@@ -381,7 +381,9 @@ def prepare_generation_embedding(model, model_name, input_tokens):
 def main():
     parser = argparse.ArgumentParser()
     args = setup_parser(parser)
+    t1 = time.perf_counter()
     model, assistant_model, tokenizer, generation_config = initialize_model(args, logger)
+    initialize_model_time = time.perf_counter() - t1
 
     use_lazy_mode = True
     if args.torch_compile:
@@ -610,6 +612,10 @@ def main():
             print("{:35} = {} GB".format(k[:-5].replace("_", " ").capitalize(), v))
         print(f"Graph compilation duration          = {compilation_duration} seconds")
         print(separator)
+        print()
+        print("-------------- JS print --------------")
+        print(f"duration: {duration}")
+        print(f"initialize_model_time: {initialize_model_time}")
         print()
     else:
         # Downloading and loading a dataset from the hub.
