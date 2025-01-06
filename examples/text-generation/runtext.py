@@ -1,5 +1,5 @@
 import os
-model_pair = {"gpt2": "gpt2", "bloom": "bigscience/bloom", "starcoder": "bigcode/starcoder", "gpt-j": "EleutherAI/gpt-j-6b", "stableLM": "stabilityai/stablelm-2-1_6b", "mistral": "mistralai/Mistral-7B-Instruct-v0.3", "mixtral": "mistralai/Mixtral-8x7B-Instruct-v0.1"}
+model_pair = {"gpt2": "gpt2", "bloom-7b": "bigscience/bloom-7b1", "starcoder-16b": "bigcode/starcoder", "gpt-j-6b": "EleutherAI/gpt-j-6b", "stableLM-6b": "stabilityai/stablelm-2-1_6b", "mistral-7b": "mistralai/Mistral-7B-Instruct-v0.3", "mixtral-46b": "mistralai/Mixtral-8x7B-Instruct-v0.1", "codegen-6b": "Salesforce/codegen-6B-multi"}
 # model_pair = {"gpt2": "gpt2"}
 
 def make_script(model, eval, type):
