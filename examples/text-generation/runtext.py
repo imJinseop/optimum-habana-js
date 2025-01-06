@@ -59,7 +59,7 @@ def make_script(model, eval, type):
 types = ["fp32", "bf16", "fp8_measure", "fp8"]
 for model in model_pair.keys():
     for eval in [False, True]:
-        os.system(f"mkdir -p ./logs/{model}/run_geneartion")
+        os.system(f"mkdir -p ./logs/{model}/run_generation")
         os.system(f"mkdir -p ./logs/{model}/eval")
         for type in types:
             script = make_script(model, eval, type)
