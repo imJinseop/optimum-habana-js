@@ -1,6 +1,6 @@
 import os
-# model_pair = {"gpt2": "gpt2", "bloom": "bigscience/bloom"}
-model_pair = {"gpt2": "gpt2"}
+model_pair = {"gpt2": "gpt2", "bloom": "bigscience/bloom", "starcoder": "bigcode/starcoder", "gpt-j": "EleutherAI/gpt-j-6b", "stableLM": "stabilityai/stablelm-2-1_6b", "mistral": "mistralai/Mistral-7B-Instruct-v0.3", "mixtral": "mistralai/Mixtral-8x7B-Instruct-v0.1"}
+# model_pair = {"gpt2": "gpt2"}
 
 def make_script(model, eval, type):
 
@@ -55,10 +55,14 @@ def make_script(model, eval, type):
     return script
 
 
-types = ["fp8_measure", "fp8"]
-# types = ["fp32", "bf16", "fp8_measure", "fp8"]
+# types = ["fp8_measure", "fp8"]
+types = ["fp32", "bf16", "fp8_measure", "fp8"]
 for model in model_pair.keys():
-    for type in types:
-        os.system(make_script(model, False, type=type))
-        os.system(make_script(model, True, type=type))
+    for eval in [False, True]:
+        os.makedirs(f"./logs/{model}/run_geneartion")
+        os.makedirs(f"./logs/{model}/eval")
+        for type in types:
+            script = make_script(model, eval, type)
+            print(script)
+            os.system(script)
         
