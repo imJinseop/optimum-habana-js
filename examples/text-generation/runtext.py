@@ -14,26 +14,26 @@ model_pair = {
 }
 # model_pair = {"gpt2": "gpt2"}
 
-def make_script(model, eval, type):
+def make_script(model, runtype, dtype):
 
     script = ""
-    if (type == "fp8"):
+    if (dtype == "fp8"):
         script += "QUANT_CONFIG=./quantization_config/maxabs_quant.json \\\n"
-    elif (type == "fp8_measure"):
+    elif (dtype == "fp8_measure"):
     # script += "QUANT_CONFIG=./quantization_config/maxabs_quant_e5m2.json \\\n"
         script += "QUANT_CONFIG=./quantization_config/maxabs_measure.json \\\n"
     # script += "QUANT_CONFIG=./quantization_config/maxabs_measure_e5m2.json \\\n"
-    elif (type == "bf16"):
+    elif (dtype == "bf16"):
         bf16 = True
-    elif (type == "fp32"):
+    elif (dtype == "fp32"):
         bf16 = False
     else:
         assert(0)
     
-    if (eval):
+    if (runtype == "eval"):
         script += "python run_lm_eval.py \\\n"
         # for run_lm_eval.py
-        script += f"--output_file ./logs/{model}/eval/{type}.json \\\n"
+        script += f"--output_file ./logs/{model}/eval/{dtype}.json \\\n"
     else:
         script += "python run_generation.py \\\n"
     # script += "--model_name_or_path /model_weights/meta-llama/Llama-3.1-8B-Instruct/ \\\n"
@@ -42,10 +42,10 @@ def make_script(model, eval, type):
     # for run_generation.py
     # script += "--output_dir ./logs/run_generation/fp8_measure \\\n"
 
-    if (type != "fp32"):
+    if (dtype != "fp32"):
         script += "--bf16 \\\n"
 
-    if (not eval):
+    if (runtype == "run"):
         script += "--book_source \\\n"
         script += "--max_input_tokens 100 \\\n"
         script += "--max_new_tokens 100 \\\n"
@@ -60,33 +60,37 @@ def make_script(model, eval, type):
 
 
     script += "--device hpu"
-    if (not eval):
-        script += f" >./logs/{model}/run_generation/{type}.txt 2>&1"
+    if (runtype == "run"):
+        script += f" >./logs/{model}/run_generation/{dtype}.txt 2>&1"
 
     # print(script)
     return script
 
 
 
-def main(model, eval, type):
+def main(model, runtype, dtype):
     models = model_pair.keys() if model == None else [model]
-    evals = [False, True] if eval == None else [eval]
-    types = ["fp32", "bf16", "fp8_measure", "fp8"] if type == None else type.split(",")
+    runtypes = ["run", "eval"] if eval == None else [runtype]
+    dtypes = ["fp32", "bf16", "fp8_measure", "fp8"] if dtype == None else dtype.split(",")
     for model in models:
-        for eval in evals:
-            os.system(f"mkdir -p ./logs/{model}/run_generation")
-            os.system(f"mkdir -p ./logs/{model}/eval")
-            for type in types:
-                script = make_script(model, eval, type)
+        for runtype in runtypes:
+            if (runtype == "run"):
+                os.system(f"mkdir -p ./logs/{model}/run_generation")
+            else:
+                os.system(f"mkdir -p ./logs/{model}/eval")
+            for dtype in dtypes:
+                script = make_script(model, runtype, dtype)
                 print(script)
                 os.system(script)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default=None)
-    parser.add_argument("--eval", type=bool, default=None)
-    parser.add_argument("--type", type=str, default=None)
+    parser.add_argument("--runtype", type=str, default=None)
+    parser.add_argument("--dtype", type=str, default=None)
     args = parser.parse_args()
-    assert(args.model in model_pair.keys())
-    
-    main(args.model, args.eval, args.type)
+    assert(args.model == None or args.model in model_pair.keys())
+    assert(args.runtype == None or args.runtype in ["run", "eval"])
+    assert(args.dtype == None or set(args.dtype.split(',')).issubset(set(["fp32", "bf16", "fp8_measure", "fp8"])))
+    # return None
+    main(args.model, args.runtype, args.dtype)
