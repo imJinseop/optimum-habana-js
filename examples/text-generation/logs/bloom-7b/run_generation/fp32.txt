@@ -2,10 +2,10 @@
   return isinstance(object, types.FunctionType)
 /usr/local/lib/python3.10/dist-packages/transformers/deepspeed.py:24: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
   warnings.warn(
-Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:55<00:55, 55.96s/it]Fetching 2 files: 100%|██████████| 2/2 [00:55<00:00, 27.98s/it]
-Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 18517.90it/s]
-01/06/2025 11:06:30 - INFO - __main__ - Single-device run.
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.18it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 30840.47it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 25420.02it/s]
+01/07/2025 07:04:59 - INFO - __main__ - Single-device run.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.18s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.20it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.13it/s]
 ============================= HABANA PT BRIDGE CONFIGURATION =========================== 
  PT_HPU_LAZY_MODE = 1
  PT_RECIPE_CACHE_PATH = 
@@ -20,23 +20,23 @@
 Num CPU Cores : 160
 CPU RAM       : 2113399844 KB
 ------------------------------------------------------------------------------
-01/06/2025 11:06:45 - INFO - __main__ - Args: Namespace(device='hpu', model_name_or_path='bigscience/bloom-7b1', bf16=False, max_new_tokens=100, max_input_tokens=100, batch_size=16, warmup=3, n_iterations=5, local_rank=0, use_kv_cache=True, use_hpu_graphs=True, dataset_name=None, column_name=None, do_sample=False, num_beams=1, top_k=None, penalty_alpha=None, trim_logits=False, seed=27, profiling_warmup_steps=0, profiling_steps=0, profiling_record_shapes=False, prompt=None, bad_words=None, force_words=None, assistant_model=None, peft_model=None, num_return_sequences=1, token=None, model_revision='main', attn_softmax_bf16=False, output_dir=None, bucket_size=-1, bucket_internal=False, dataset_max_samples=-1, limit_hpu_graphs=False, show_graphs_count=False, reuse_cache=False, verbose_workers=False, simulate_dyn_prompt=None, reduce_recompile=False, use_chat_template=False, use_flash_attention=True, flash_attention_recompute=False, flash_attention_causal_mask=False, flash_attention_fast_softmax=True, book_source=True, torch_compile=False, ignore_eos=True, temperature=1.0, top_p=1.0, const_serialization_path=None, trust_remote_code=False, parallel_strategy='none', input_embeds=False, run_partial_dataset=False, load_quantized_model_with_autogptq=False, disk_offload=False, load_quantized_model_with_inc=False, local_quantized_inc_model_path=None, quant_config='', world_size=0, global_rank=0)
-01/06/2025 11:06:45 - INFO - __main__ - device: hpu, n_hpu: 0, bf16: False
-01/06/2025 11:06:45 - INFO - __main__ - Model initialization took 73.608s
-01/06/2025 11:06:48 - INFO - __main__ - Graph compilation...
-Book downloaded and saved to: /tmp/2701_345271.txt
+01/07/2025 07:05:11 - INFO - __main__ - Args: Namespace(device='hpu', model_name_or_path='bigscience/bloom-7b1', bf16=False, max_new_tokens=100, max_input_tokens=100, batch_size=16, warmup=3, n_iterations=5, local_rank=0, use_kv_cache=True, use_hpu_graphs=True, dataset_name=None, column_name=None, do_sample=False, num_beams=1, top_k=None, penalty_alpha=None, trim_logits=False, seed=27, profiling_warmup_steps=0, profiling_steps=0, profiling_record_shapes=False, prompt=None, bad_words=None, force_words=None, assistant_model=None, peft_model=None, num_return_sequences=1, token=None, model_revision='main', attn_softmax_bf16=False, output_dir=None, bucket_size=-1, bucket_internal=False, dataset_max_samples=-1, limit_hpu_graphs=False, show_graphs_count=False, reuse_cache=False, verbose_workers=False, simulate_dyn_prompt=None, reduce_recompile=False, use_chat_template=False, use_flash_attention=True, flash_attention_recompute=False, flash_attention_causal_mask=False, flash_attention_fast_softmax=True, book_source=True, torch_compile=False, ignore_eos=True, temperature=1.0, top_p=1.0, const_serialization_path=None, trust_remote_code=False, parallel_strategy='none', input_embeds=False, run_partial_dataset=False, load_quantized_model_with_autogptq=False, disk_offload=False, load_quantized_model_with_inc=False, local_quantized_inc_model_path=None, quant_config='', world_size=0, global_rank=0)
+01/07/2025 07:05:11 - INFO - __main__ - device: hpu, n_hpu: 0, bf16: False
+01/07/2025 07:05:11 - INFO - __main__ - Model initialization took 13.880s
+01/07/2025 07:05:14 - INFO - __main__ - Graph compilation...
+Book downloaded and saved to: /tmp/2701_609780.txt
 Warming up iteration 1/3
-01/06/2025 11:07:01 - INFO - __main__ - Time to first token = 7027.559655718505ms
+01/07/2025 07:05:28 - INFO - __main__ - Time to first token = 8166.899011470377ms
 Warming up iteration 2/3
-01/06/2025 11:07:06 - INFO - __main__ - Time to first token = 536.8266617879272ms
+01/07/2025 07:05:32 - INFO - __main__ - Time to first token = 534.1045102104545ms
 Warming up iteration 3/3
-01/06/2025 11:07:10 - INFO - __main__ - Time to first token = 530.6823449209332ms
-01/06/2025 11:07:10 - INFO - __main__ - Running generate...
-01/06/2025 11:07:14 - INFO - __main__ - Time to first token = 530.7506574317813ms
-01/06/2025 11:07:18 - INFO - __main__ - Time to first token = 531.9540286436677ms
-01/06/2025 11:07:22 - INFO - __main__ - Time to first token = 530.8696879073977ms
-01/06/2025 11:07:26 - INFO - __main__ - Time to first token = 532.4984677135944ms
-01/06/2025 11:07:30 - INFO - __main__ - Time to first token = 531.918247230351ms
+01/07/2025 07:05:36 - INFO - __main__ - Time to first token = 532.4190612882376ms
+01/07/2025 07:05:36 - INFO - __main__ - Running generate...
+01/07/2025 07:05:41 - INFO - __main__ - Time to first token = 530.4868649691343ms
+01/07/2025 07:05:45 - INFO - __main__ - Time to first token = 531.813413836062ms
+01/07/2025 07:05:49 - INFO - __main__ - Time to first token = 530.3152445703745ms
+01/07/2025 07:05:53 - INFO - __main__ - Time to first token = 531.6499900072813ms
+01/07/2025 07:05:57 - INFO - __main__ - Time to first token = 530.2134426310658ms
 
 Input/outputs:
 input 1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
@@ -91,14 +91,14 @@ output 16.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale Thi
 Stats:
 ----------------------------------------------------------------------------------
 Input tokens
-Throughput (including tokenization) = 391.3920166444212 tokens/second
+Throughput (including tokenization) = 391.4884690787369 tokens/second
 Memory allocated                    = 42.39 GB
 Max memory allocated                = 92.45 GB
 Total memory available              = 94.62 GB
-Graph compilation duration          = 22.19833738170564 seconds
+Graph compilation duration          = 22.844560399651527 seconds
 ----------------------------------------------------------------------------------
 
 -------------- JS print --------------
-duration: 20.439865045249462
-initialize_model_time: 73.60845003090799
+duration: 20.43482920154929
+initialize_model_time: 13.879977086558938
 

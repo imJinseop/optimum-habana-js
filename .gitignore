@@ -138,4 +138,4 @@ dmypy.json
 # js
 **/hl-smi_log.**
 **/examples/text-generation/profiles/**
-examples/text-generation/hqt_output/**
+**/examples/text-generation/hqt_output/**
