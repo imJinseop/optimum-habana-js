@@ -9,7 +9,8 @@ model_pair = {
     "stableLM-6b": "stabilityai/stablelm-2-1_6b", 
     "mistral-7b": "mistralai/Mistral-7B-Instruct-v0.3", 
     "mixtral-46b": "mistralai/Mixtral-8x7B-Instruct-v0.1", 
-    "codegen-6b": "Salesforce/codegen-6B-multi"
+    "codegen-6b": "Salesforce/codegen-6B-multi",
+    "llama-3.1-8b": " /model_weights/meta-llama/Llama-3.1-8B-Instruct/"
 }
 # model_pair = {"gpt2": "gpt2"}
 
@@ -86,4 +87,6 @@ if __name__ == "__main__":
     parser.add_argument("--eval", type=bool, default=None)
     parser.add_argument("--type", type=str, default=None)
     args = parser.parse_args()
+    assert(args.model in model_pair.keys())
+    
     main(args.model, args.eval, args.type)
