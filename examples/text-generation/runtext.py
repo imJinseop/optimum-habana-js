@@ -78,7 +78,7 @@ def main(model, eval, type):
             for type in types:
                 script = make_script(model, eval, type)
                 print(script)
-                # os.system(script)
+                os.system(script)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
