@@ -1,5 +1,16 @@
 import os
-model_pair = {"gpt2": "gpt2", "bloom-7b": "bigscience/bloom-7b1", "starcoder-16b": "bigcode/starcoder", "gpt-j-6b": "EleutherAI/gpt-j-6b", "stableLM-6b": "stabilityai/stablelm-2-1_6b", "mistral-7b": "mistralai/Mistral-7B-Instruct-v0.3", "mixtral-46b": "mistralai/Mixtral-8x7B-Instruct-v0.1", "codegen-6b": "Salesforce/codegen-6B-multi"}
+import argparse
+
+model_pair = {
+    "gpt2": "gpt2", 
+    "bloom-7b": "bigscience/bloom-7b1", 
+    "starcoder-16b": "bigcode/starcoder", 
+    "gpt-j-6b": "EleutherAI/gpt-j-6b", 
+    "stableLM-6b": "stabilityai/stablelm-2-1_6b", 
+    "mistral-7b": "mistralai/Mistral-7B-Instruct-v0.3", 
+    "mixtral-46b": "mistralai/Mixtral-8x7B-Instruct-v0.1", 
+    "codegen-6b": "Salesforce/codegen-6B-multi"
+}
 # model_pair = {"gpt2": "gpt2"}
 
 def make_script(model, eval, type):
@@ -55,14 +66,24 @@ def make_script(model, eval, type):
     return script
 
 
-# types = ["fp8_measure", "fp8"]
-types = ["fp32", "bf16", "fp8_measure", "fp8"]
-for model in model_pair.keys():
-    for eval in [False, True]:
-        os.system(f"mkdir -p ./logs/{model}/run_generation")
-        os.system(f"mkdir -p ./logs/{model}/eval")
-        for type in types:
-            script = make_script(model, eval, type)
-            print(script)
-            os.system(script)
-        
+
+def main(model, eval, type):
+    models = model_pair.keys() if model == None else [model]
+    evals = [False, True] if eval == None else [eval]
+    types = ["fp32", "bf16", "fp8_measure", "fp8"] if type == None else type.split(",")
+    for model in models:
+        for eval in evals:
+            os.system(f"mkdir -p ./logs/{model}/run_generation")
+            os.system(f"mkdir -p ./logs/{model}/eval")
+            for type in types:
+                script = make_script(model, eval, type)
+                print(script)
+                # os.system(script)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", type=str, default=None)
+    parser.add_argument("--eval", type=bool, default=None)
+    parser.add_argument("--type", type=str, default=None)
+    args = parser.parse_args()
+    main(args.model, args.eval, args.type)
