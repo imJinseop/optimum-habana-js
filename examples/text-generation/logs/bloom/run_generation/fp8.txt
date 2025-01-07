@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/jinseop/optimum-habana-js/examples/text-generation/run_generation.py", line 30, in <module>
+    import torch
+  File "/usr/local/lib/python3.10/dist-packages/torch/__init__.py", line 1694, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 216, in _lock_unlock_module
+KeyboardInterrupt

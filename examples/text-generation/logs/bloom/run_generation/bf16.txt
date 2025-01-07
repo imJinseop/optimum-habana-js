@@ -1,0 +1,5 @@
+/usr/lib/python3.10/inspect.py:288: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  return isinstance(object, types.FunctionType)
+/usr/local/lib/python3.10/dist-packages/transformers/deepspeed.py:24: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Fetching 72 files:   0%|          | 0/72 [00:00<?, ?it/s]Fetching 72 files:   1%|▏         | 1/72 [05:27<6:27:22, 327.36s/it]Fetching 72 files:  24%|██▎       | 17/72 [07:02<17:47, 19.41s/it]  Fetching 72 files:  25%|██▌       | 18/72 [07:03<16:10, 17.98s/it]Fetching 72 files:  26%|██▋       | 19/72 [07:17<15:31, 17.58s/it]Fetching 72 files:  36%|███▌      | 26/72 [07:17<06:42,  8.75s/it]Fetching 72 files:  40%|████      | 29/72 [07:25<05:14,  7.30s/it]Fetching 72 files:  43%|████▎     | 31/72 [07:33<04:35,  6.72s/it]Received Interrupt

@@ -1,0 +1,69 @@
+/usr/lib/python3.10/inspect.py:288: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  return isinstance(object, types.FunctionType)
+/usr/local/lib/python3.10/dist-packages/transformers/deepspeed.py:24: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/dist-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/bigcode/starcoder/resolve/827cd7721231872c152e3faef5cae1b22964ed58/model-00001-of-00007.safetensors
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jinseop/optimum-habana-js/examples/text-generation/run_generation.py", line 779, in <module>
+    main()
+  File "/home/jinseop/optimum-habana-js/examples/text-generation/run_generation.py", line 385, in main
+    model, assistant_model, tokenizer, generation_config = initialize_model(args, logger)
+  File "/home/jinseop/optimum-habana-js/examples/text-generation/utils.py", line 698, in initialize_model
+    cache_dir = get_repo_root(args.model_name_or_path, local_rank=args.local_rank, token=args.token)
+  File "/usr/local/lib/python3.10/dist-packages/optimum/habana/checkpoint_utils.py", line 36, in get_repo_root
+    cache_dir = snapshot_download(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/_snapshot_download.py", line 296, in snapshot_download
+    thread_map(
+  File "/usr/local/lib/python3.10/dist-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/_snapshot_download.py", line 270, in _inner_hf_hub_download
+    return hf_hub_download(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 860, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 967, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 1482, in _raise_on_head_call_error
+    raise head_call_error
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 1374, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 1294, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 278, in _request_wrapper
+    response = _request_wrapper(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 302, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-677bce51-716350d10c5a6d767e66f388;6624a757-e943-4626-a868-61a35600a1de)
+
+Cannot access gated repo for url https://huggingface.co/bigcode/starcoder/resolve/827cd7721231872c152e3faef5cae1b22964ed58/model-00001-of-00007.safetensors.
+Access to model bigcode/starcoder is restricted. You must have access to it and be authenticated to access it. Please log in.

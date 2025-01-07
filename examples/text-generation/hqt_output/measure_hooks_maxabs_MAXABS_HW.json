@@ -3437,6 +3437,4766 @@
             "params": {
                 "weight": 0.00390625
             }
+        },
+        "transformer.h.0.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.0.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.0.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.0.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.1.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.1.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.1.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.1.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.2.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.2.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.2.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.2.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.3.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.3.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.3.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.3.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.4.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.4.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.4.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.4.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.5.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.5.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.5.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.5.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.6.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.6.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.6.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.6.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.7.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.7.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.7.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.7.mlp.dense_4h_to_h": {
+            "inputs": [
+                16.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.8.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.8.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.8.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.8.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.9.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.9.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.9.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.9.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.10.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.10.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.10.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.10.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.11.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.11.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.12.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.13.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.14.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.15.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.15.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.15.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.15.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.16.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.17.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.17.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.17.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.17.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.18.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.18.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.18.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.18.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.19.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.19.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.19.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.19.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.20.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.20.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.20.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.20.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.21.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.21.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.21.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.21.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.22.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.22.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.22.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.22.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.23.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.23.self_attention.dense": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.23.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.23.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.24.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.24.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.24.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.24.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.25.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.25.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.25.mlp.dense_h_to_4h": {
+            "inputs": [
+                16.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.25.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.26.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.26.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.26.mlp.dense_h_to_4h": {
+            "inputs": [
+                16.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.26.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.27.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.27.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.27.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.27.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.28.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.28.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.28.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.28.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.29.self_attention.query_key_value": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.29.self_attention.dense": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.29.mlp.dense_h_to_4h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.29.mlp.dense_4h_to_h": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.0.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.0.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.0.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.0.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.0.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.0.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.0.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.0.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.0.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.0.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.1.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.1.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.1.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.1.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.1.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.1.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.1.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.1.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.1.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.1.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.2.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.2.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.2.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.2.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.2.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.2.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.2.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.2.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.2.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.2.mlp.fc_out": {
+            "inputs": [
+                16.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.3.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.3.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.3.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.3.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.3.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.3.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.3.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.3.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.3.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.3.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.4.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.4.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.4.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.4.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.4.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.4.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.4.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.4.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.4.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.4.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.5.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.5.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.5.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.5.attn.out_proj": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.5.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.5.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.5.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.5.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.5.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.5.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.6.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.6.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.6.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.6.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.6.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.6.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.6.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.6.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.6.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.6.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.7.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.7.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.7.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.7.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.7.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.7.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.7.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.7.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.7.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.7.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.8.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.8.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.8.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.8.attn.out_proj": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.8.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.8.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.8.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.8.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.8.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.8.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.9.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.9.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.9.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.9.attn.out_proj": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.9.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.9.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.9.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.9.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.9.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.9.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.10.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.10.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.10.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.10.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.10.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.10.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.10.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.10.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.10.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.10.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.11.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.11.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.11.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.11.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.12.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.12.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.12.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.12.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.12.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.13.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.13.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.13.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.13.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.13.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.14.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.attn.out_proj": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.14.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.14.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.14.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.14.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.15.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.15.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.15.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.15.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.15.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.15.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.15.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.15.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.15.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.15.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.16.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.16.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.16.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.16.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.16.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.17.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.17.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.17.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.17.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.17.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.17.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.17.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.17.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.17.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.17.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.18.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.18.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.18.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.18.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.18.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.18.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.18.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.18.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.18.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.18.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.19.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.19.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.19.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.19.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.19.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.19.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.19.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.19.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.19.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.19.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.20.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.20.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.20.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.20.attn.out_proj": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.20.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.20.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.20.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.20.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.20.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.20.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.21.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.21.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.21.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.21.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.21.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.21.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.21.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.21.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.21.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.21.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.22.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.22.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.22.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.22.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.22.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.22.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.22.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.22.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.22.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.22.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.23.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.23.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.23.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.23.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.23.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.23.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.23.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.23.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.23.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.23.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.24.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.24.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.24.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.24.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.24.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.24.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.24.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.24.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.24.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.24.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.25.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.25.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.25.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.25.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.25.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.25.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.25.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.25.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.25.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.25.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.26.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.26.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.26.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.26.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.26.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.26.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.26.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.26.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.26.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.26.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.27.attn.k_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.27.attn.v_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.27.attn.q_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.27.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.27.attn.matmul_qk": {
+            "inputs": [
+                1.0,
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.27.attn.matmul_av": {
+            "inputs": [
+                0.0625,
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {}
+        },
+        "transformer.h.27.attn.k_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.27.attn.v_cache": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                1.0
+            ],
+            "params": {}
+        },
+        "transformer.h.27.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.27.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.0.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.1.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.2.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.3.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.4.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.5.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.6.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.7.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.8.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.9.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.10.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.11.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.12.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.13.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.14.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.15.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.16.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.17.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.18.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.19.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.20.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.21.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.22.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.23.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.24.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.25.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.26.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.27.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.28.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.28.attn.out_proj": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.28.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.28.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.29.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.29.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.29.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.29.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.30.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.30.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.30.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.30.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.31.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.31.attn.out_proj": {
+            "inputs": [
+                0.0625
+            ],
+            "outputs": [
+                0.000244140625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.31.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.31.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.32.attn.qkv_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.32.attn.out_proj": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.00390625
+            ],
+            "params": {
+                "weight": 0.00390625
+            }
+        },
+        "transformer.h.32.mlp.fc_in": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
+        },
+        "transformer.h.32.mlp.fc_out": {
+            "inputs": [
+                1.0
+            ],
+            "outputs": [
+                0.0625
+            ],
+            "params": {
+                "weight": 0.0625
+            }
         }
     }
 }

@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/home/jinseop/optimum-habana-js/examples/text-generation/run_generation.py", line 30, in <module>
+    import torch
+  File "/usr/local/lib/python3.10/dist-packages/torch/__init__.py", line 1755, in <module>
+    from .functional import *  # noqa: F403
+  File "/usr/local/lib/python3.10/dist-packages/torch/functional.py", line 10, in <module>
+    import torch.nn.functional as F
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/__init__.py", line 2, in <module>
+    from .modules import *  # noqa: F403
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/__init__.py", line 2, in <module>
+    from .linear import Identity, Linear, Bilinear, LazyLinear
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 8, in <module>
+    from .. import functional as F
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py", line 3857, in <module>
+    def interpolate(input: Tensor, size: Optional[List[int]] = None, scale_factor: Optional[List[float]] = None, mode: str = 'nearest', align_corners: Optional[bool] = None, recompute_scale_factor: Optional[bool] = None, antialias: bool = False) -> Tensor:  # noqa: F811,B950
+  File "/usr/local/lib/python3.10/dist-packages/torch/_jit_internal.py", line 899, in _overload
+    _check_overload_body(func)
+  File "/usr/local/lib/python3.10/dist-packages/torch/_jit_internal.py", line 868, in _check_overload_body
+    parsed_def = parse_def(func)
+  File "/usr/local/lib/python3.10/dist-packages/torch/_sources.py", line 121, in parse_def
+    sourcelines, file_lineno, filename = get_source_lines_and_file(
+  File "/usr/local/lib/python3.10/dist-packages/torch/_sources.py", line 24, in get_source_lines_and_file
+    sourcelines, file_lineno = inspect.getsourcelines(obj)
+  File "/usr/lib/python3.10/inspect.py", line 1131, in getsourcelines
+    return getblock(lines[lnum:]), lnum + 1
+  File "/usr/lib/python3.10/inspect.py", line 1107, in getblock
+    blockfinder.tokeneater(*_token)
+KeyboardInterrupt
