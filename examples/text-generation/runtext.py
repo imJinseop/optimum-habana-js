@@ -2,15 +2,18 @@ import os
 import argparse
 
 model_pair = {
-    "gpt2": "gpt2", 
-    "bloom-7b": "bigscience/bloom-7b1", 
-    "starcoder-16b": "bigcode/starcoder", 
-    "gpt-j-6b": "EleutherAI/gpt-j-6b", 
-    "stableLM-6b": "stabilityai/stablelm-2-1_6b", 
-    "mistral-7b": "mistralai/Mistral-7B-Instruct-v0.3", 
-    "mixtral-46b": "mistralai/Mixtral-8x7B-Instruct-v0.1", 
-    "codegen-6b": "Salesforce/codegen-6B-multi",
-    "llama-3.1-8b": " /model_weights/meta-llama/Llama-3.1-8B-Instruct/"
+    # "gpt2": "gpt2", 
+    # "bloom-7b": "bigscience/bloom-7b1", 
+    # "starcoder-16b": "bigcode/starcoder", 
+    # "gpt-j-6b": "EleutherAI/gpt-j-6b", 
+    # "stableLM-6b": "stabilityai/stablelm-2-1_6b", 
+    # "mistral-7b": "mistralai/Mistral-7B-Instruct-v0.3", 
+    "mixtral-8x7B": "mistralai/Mixtral-8x7B-Instruct-v0.1", 
+    # "codegen-6b": "Salesforce/codegen-6B-multi",
+    "llama-3.1-8b": "/model_weights/meta-llama/Llama-3.1-8B-Instruct/",
+    "phi-2": "microsoft/phi-2",
+    # "gemma-2-9b": "google/gemma-2-9b",
+    "falcon-7b": "tiiuae/falcon-7b-instruct"
 }
 # model_pair = {"gpt2": "gpt2"}
 
