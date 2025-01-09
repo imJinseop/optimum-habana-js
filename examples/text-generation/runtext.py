@@ -13,7 +13,8 @@ model_pair = {
     "llama-3.1-8b": "/model_weights/meta-llama/Llama-3.1-8B-Instruct/",
     "phi-2": "microsoft/phi-2",
     # "gemma-2-9b": "google/gemma-2-9b",
-    "falcon-7b": "tiiuae/falcon-7b-instruct"
+    "falcon-7b": "tiiuae/falcon-7b-instruct",
+    "gemma-7b": "google/gemma-7b"
 }
 # model_pair = {"gpt2": "gpt2"}
 
@@ -21,7 +22,8 @@ def make_script(model, runtype, dtype):
 
     script = ""
     if (dtype == "fp8"):
-        script += "QUANT_CONFIG=./quantization_config/maxabs_quant.json \\\n"
+        quant_tail = "_mixtral" if "mixtral" in model else "_phi" if "phi" in model else "_gemma" if "gemma" in model else ""
+        script += f"QUANT_CONFIG=./quantization_config/maxabs_quant{quant_tail}.json \\\n"
     elif (dtype == "fp8_measure"):
     # script += "QUANT_CONFIG=./quantization_config/maxabs_quant_e5m2.json \\\n"
         script += "QUANT_CONFIG=./quantization_config/maxabs_measure.json \\\n"
@@ -72,7 +74,7 @@ def make_script(model, runtype, dtype):
 
 
 def main(model, runtype, dtype):
-    models = model_pair.keys() if model == None else [model]
+    models = model_pair.keys() if model == None else model.split(',')
     runtypes = ["run", "eval"] if runtype == None else [runtype]
     dtypes = ["fp32", "bf16", "fp8_measure", "fp8"] if dtype == None else dtype.split(",")
     for model in models:
@@ -92,7 +94,7 @@ if __name__ == "__main__":
     parser.add_argument("--runtype", type=str, default=None)
     parser.add_argument("--dtype", type=str, default=None)
     args = parser.parse_args()
-    assert(args.model == None or args.model in model_pair.keys())
+    assert(args.model == None or set(args.model.split(',')).issubset(set(model_pair.keys())))
     assert(args.runtype == None or args.runtype in ["run", "eval"])
     assert(args.dtype == None or set(args.dtype.split(',')).issubset(set(["fp32", "bf16", "fp8_measure", "fp8"])))
     # return None
