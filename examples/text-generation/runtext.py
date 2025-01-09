@@ -73,7 +73,7 @@ def make_script(model, runtype, dtype):
 
 def main(model, runtype, dtype):
     models = model_pair.keys() if model == None else [model]
-    runtypes = ["run", "eval"] if eval == None else [runtype]
+    runtypes = ["run", "eval"] if runtype == None else [runtype]
     dtypes = ["fp32", "bf16", "fp8_measure", "fp8"] if dtype == None else dtype.split(",")
     for model in models:
         for runtype in runtypes:
