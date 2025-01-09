@@ -1,0 +1,114 @@
+/usr/lib/python3.10/inspect.py:288: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  return isinstance(object, types.FunctionType)
+/usr/local/lib/python3.10/dist-packages/transformers/deepspeed.py:24: FutureWarning: transformers.deepspeed module is deprecated and will be removed in a future version. Please import deepspeed modules directly from transformers.integrations
+  warnings.warn(
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 56488.94it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 17829.13it/s]
+01/09/2025 09:57:29 - INFO - __main__ - Single-device run.
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.95it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.93it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  6.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.91it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.47it/s]
+2025-01-09 09:57:31 [WARNING][auto_accelerator.py:422] Auto detect accelerator: HPU_Accelerator.
+2025-01-09 09:57:31 [INFO][utils.py:211] Conversion started.
+2025-01-09 09:57:31 [INFO][quantize.py:224] Start to convert model with fp8_quant.
+============================= HABANA PT BRIDGE CONFIGURATION =========================== 
+ PT_HPU_LAZY_MODE = 1
+ PT_RECIPE_CACHE_PATH = 
+ PT_CACHE_FOLDER_DELETE = 0
+ PT_HPU_RECIPE_CACHE_CONFIG = 
+ PT_HPU_MAX_COMPOUND_OP_SIZE = 9223372036854775807
+ PT_HPU_LAZY_ACC_PAR_MODE = 1
+ PT_HPU_ENABLE_REFINE_DYNAMIC_SHAPES = 0
+ PT_HPU_EAGER_PIPELINE_ENABLE = 1
+ PT_HPU_EAGER_COLLECTIVE_PIPELINE_ENABLE = 1
+---------------------------: System Configuration :---------------------------
+Num CPU Cores : 160
+CPU RAM       : 2113399844 KB
+------------------------------------------------------------------------------
+2025-01-09 09:57:39 [INFO][utils.py:211] Conversion end.
+01/09/2025 09:57:41 - INFO - __main__ - Args: Namespace(device='hpu', model_name_or_path='google/gemma-7b', bf16=True, max_new_tokens=100, max_input_tokens=100, batch_size=16, warmup=3, n_iterations=5, local_rank=0, use_kv_cache=True, use_hpu_graphs=True, dataset_name=None, column_name=None, do_sample=False, num_beams=1, top_k=None, penalty_alpha=None, trim_logits=False, seed=27, profiling_warmup_steps=0, profiling_steps=0, profiling_record_shapes=False, prompt=None, bad_words=None, force_words=None, assistant_model=None, peft_model=None, num_return_sequences=1, token=None, model_revision='main', attn_softmax_bf16=False, output_dir=None, bucket_size=-1, bucket_internal=False, dataset_max_samples=-1, limit_hpu_graphs=False, show_graphs_count=False, reuse_cache=False, verbose_workers=False, simulate_dyn_prompt=None, reduce_recompile=False, use_chat_template=False, use_flash_attention=True, flash_attention_recompute=False, flash_attention_causal_mask=False, flash_attention_fast_softmax=True, book_source=True, torch_compile=False, ignore_eos=True, temperature=1.0, top_p=1.0, const_serialization_path=None, trust_remote_code=False, parallel_strategy='none', input_embeds=False, run_partial_dataset=False, load_quantized_model_with_autogptq=False, disk_offload=False, load_quantized_model_with_inc=False, local_quantized_inc_model_path=None, quant_config='./quantization_config/maxabs_quant_gemma.json', world_size=0, global_rank=0)
+01/09/2025 09:57:41 - INFO - __main__ - device: hpu, n_hpu: 0, bf16: True
+01/09/2025 09:57:41 - INFO - __main__ - Model initialization took 14.370s
+01/09/2025 09:57:43 - INFO - __main__ - Graph compilation...
+Initializing inference mode
+Book downloaded and saved to: /tmp/2701_770205.txt
+Warming up iteration 1/3
+[WARNING|logging.py:328] 2025-01-09 09:57:50,081 >> Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
+01/09/2025 09:57:56 - INFO - __main__ - Time to first token = 6742.682931944728ms
+Warming up iteration 2/3
+01/09/2025 09:57:56 - INFO - __main__ - Time to first token = 125.9621074423194ms
+Warming up iteration 3/3
+01/09/2025 09:57:57 - INFO - __main__ - Time to first token = 120.68791408091784ms
+01/09/2025 09:57:57 - INFO - __main__ - Running generate...
+01/09/2025 09:57:58 - INFO - __main__ - Time to first token = 120.50150707364082ms
+01/09/2025 09:57:59 - INFO - __main__ - Time to first token = 120.69908622652292ms
+01/09/2025 09:57:59 - INFO - __main__ - Time to first token = 120.80533523112535ms
+01/09/2025 09:58:00 - INFO - __main__ - Time to first token = 120.4432426020503ms
+01/09/2025 09:58:01 - INFO - __main__ - Time to first token = 120.7476370036602ms
+
+Input/outputs:
+input 1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 1.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 2: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 2.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 3: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 3.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 4: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 4.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 5: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 5.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 6: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 6.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 7: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 7.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 8: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 8.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 9: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 9.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 10: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 10.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 11: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 11.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 12: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 12.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 13: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 13.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 14: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 14.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 15: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 15.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+input 16: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where you are located before using this eBook. Title: Moby Dick; Or, The Whale Author: Herman ',)
+output 16.1: ('\ufeffThe Project Gutenberg eBook of Moby Dick; Or, The Whale This ebook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this ebook or online at www.gutenberg.org. If you are not located in the United States, you will have to check the laws of the country where me (',)
+
+
+Stats:
+----------------------------------------------------------------------------------
+Input tokens
+Throughput (including tokenization) = 2233.306608804051 tokens/second
+Memory allocated                    = 14.65 GB
+Max memory allocated                = 14.99 GB
+Total memory available              = 94.62 GB
+Graph compilation duration          = 13.6670314790681 seconds
+----------------------------------------------------------------------------------
+
+-------------- JS print --------------
+duration: 3.5821324167773128
+initialize_model_time: 14.370592675171793
+
