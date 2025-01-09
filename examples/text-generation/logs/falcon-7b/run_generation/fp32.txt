@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/jinseop/optimum-habana-js/examples/text-generation/run_generation.py", line 21, in <module>
+    import argparse
+  File "/usr/lib/python3.10/argparse.py", line 93, in <module>
+    from gettext import gettext as _, ngettext
+  File "/usr/lib/python3.10/gettext.py", line 73, in <module>
+    _token_pattern = re.compile(r"""
+  File "/usr/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 788, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.10/sre_parse.py", line 955, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 520, in _parse
+    this = sourceget()
+  File "/usr/lib/python3.10/sre_parse.py", line 257, in get
+    self.__next()
+  File "/usr/lib/python3.10/sre_parse.py", line 234, in __next
+    def __next(self):
+KeyboardInterrupt

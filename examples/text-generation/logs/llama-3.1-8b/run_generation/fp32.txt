@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/jinseop/optimum-habana-js/examples/text-generation/run_generation.py", line 30, in <module>
+    import torch
+  File "/usr/local/lib/python3.10/dist-packages/torch/__init__.py", line 1694, in <module>
+    _C._initExtension(_manager_path())
+  File "/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py", line 58, in <module>
+    import pynvml  # type: ignore[import]
+  File "/usr/local/lib/python3.10/dist-packages/pynvml/__init__.py", line 1, in <module>
+    from .nvml import *
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+  File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+KeyboardInterrupt

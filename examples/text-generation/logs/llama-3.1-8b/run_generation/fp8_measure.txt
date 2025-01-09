@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/jinseop/optimum-habana-js/examples/text-generation/run_generation.py", line 30, in <module>
+    import torch
+  File "/usr/local/lib/python3.10/dist-packages/torch/__init__.py", line 1481, in <module>
+    from ._tensor import Tensor
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 13, in <module>
+    import torch.utils.hooks as hooks
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/__init__.py", line 9, in <module>
+    from . import collect_env
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/collect_env.py", line 7, in <module>
+    import locale
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+KeyboardInterrupt
