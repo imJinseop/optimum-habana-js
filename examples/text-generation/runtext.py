@@ -13,7 +13,7 @@ model_pair = {
     "llama-3.1-8b": "/model_weights/meta-llama/Llama-3.1-8B-Instruct/",
     "phi-2": "microsoft/phi-2",
     # "gemma-2-9b": "google/gemma-2-9b",
-    "falcon-7b": "tiiuae/falcon-7b-instruct",
+    "falcon-7b": "tiiuae/falcon-7b",
     "gemma-7b": "google/gemma-7b"
 }
 # model_pair = {"gpt2": "gpt2"}
